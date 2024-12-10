@@ -15,11 +15,14 @@ import { addStudentThunk } from '../../store/thunks';
 
 class NewStudentContainer extends Component {
   // Initialize state
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       firstname: "", 
       lastname: "", 
+      email: "", 
+      imageUrl: "", 
+      gpa: "", 
       campusId: null, 
       redirect: false, 
       redirectId: null
@@ -38,9 +41,12 @@ class NewStudentContainer extends Component {
     event.preventDefault();  // Prevent browser reload/refresh after submit.
 
     let student = {
-        firstname: this.state.firstname,
-        lastname: this.state.lastname,
-        campusId: this.state.campusId
+      firstname: this.state.firstname,
+      lastname: this.state.lastname,
+      email: this.state.email,
+      imageUrl: this.state.imageUrl || 'https://thumbs.worthpoint.com/zoom/images1/1/0617/17/ty-classic-scrapper-plush-puppy-dog_1_0a23f34a675a1e188e7573eda6c51f25.jpg',
+      gpa: this.state.gpa || null,
+      campusId: this.state.campusId
     };
     
     // Add new student in back-end database
@@ -50,6 +56,9 @@ class NewStudentContainer extends Component {
     this.setState({
       firstname: "", 
       lastname: "", 
+      email: "", 
+      imageUrl: "", 
+      gpa: "", 
       campusId: null, 
       redirect: true, 
       redirectId: newStudent.id
