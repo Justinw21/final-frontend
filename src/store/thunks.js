@@ -47,6 +47,17 @@ export const addCampusThunk = (campus) => async (dispatch) => {  // The THUNK
   }
 };
 
+export const deleteCampusThunk = (campusId) => async (dispatch) => {
+  try {
+    // API "delete" call to delete campus (based on "campusId") from database
+    await axios.delete(`/api/campuses/${campusId}`);
+    // Dispatch the delete action to update state in the store
+    dispatch(ac.deleteCampus(campusId));
+  } catch (err) {
+    console.error(err);
+  }
+};
+
 // All Students
 // THUNK CREATOR:
 export const fetchAllStudentsThunk = () => async (dispatch) => {  // The THUNK
