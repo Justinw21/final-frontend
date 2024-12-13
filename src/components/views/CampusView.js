@@ -16,6 +16,12 @@ const CampusView = (props) => {
       <h1>{campus.name}</h1>
       <p>{campus.address}</p>
       <p>{campus.description}</p>
+      <img 
+        src={campus.imageUrl} 
+        alt={`${campus.name}`} 
+        style={{ width: '200px', height: '200px', objectFit: 'cover', borderRadius: '50%' }}
+      />
+
       <div>
         <Link to={'/edit-campus/$campus.id}'}>
           <button>Edit</button>

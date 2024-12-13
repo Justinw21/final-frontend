@@ -44,7 +44,7 @@ class NewStudentContainer extends Component {
       firstname: this.state.firstname,
       lastname: this.state.lastname,
       email: this.state.email,
-      imageUrl: this.state.imageUrl || 'https://thumbs.worthpoint.com/zoom/images1/1/0617/17/ty-classic-scrapper-plush-puppy-dog_1_0a23f34a675a1e188e7573eda6c51f25.jpg' || null,
+      imageUrl: this.state.imageUrl || 'https://i.ebayimg.com/images/g/F94AAOSw5lRnB~Aa/s-l1600.jpg' || null,
       gpa: this.state.gpa || null,
       campusId: this.state.campusId
     };
