@@ -24,6 +24,11 @@ const StudentView = (props) => {
         </h3>
       <h3>{student.email}</h3>
       <h3>{"GPA: " + student.gpa}</h3>
+      <div>
+        <Link to={'/edit-student/${student.id}'}>
+          <button>Edit</button>
+        </Link>
+      </div> 
       <img 
         src={student.imageUrl} 
         alt={`${student.firstname} ${student.lastname}`} 
