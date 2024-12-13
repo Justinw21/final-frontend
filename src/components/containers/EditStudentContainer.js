@@ -14,7 +14,7 @@ import EditStudentView from '../views/EditStudentView';
 import {editStudentThunk, fetchStudentThunk} from '../../store/thunks';
 
 class EditStudentContainer extends Component {
-  // Initialize state
+  // Initialize states
   constructor(props){
     super(props);
     this.state = {
@@ -33,7 +33,6 @@ class EditStudentContainer extends Component {
     this.props.fetchStudent(this.props.match.params.id);
   }
 
-  // Capture input data when it is entered
   handleChange = event => {
     this.setState({
       [event.target.name]: event.target.value
