@@ -75,7 +75,7 @@ const NewCampusView = (props) => {
             <input 
               type="text" 
               name="imageUrl" 
-              defaultValue="https://thumbs.worthpoint.com/zoom/images1/1/0617/17/ty-classic-scrapper-plush-puppy-dog_1_0a23f34a675a1e188e7573eda6c51f25.jpg" 
+              defaultValue="https://i.ebayimg.com/images/g/F94AAOSw5lRnB~Aa/s-l1600.jpg" 
               onChange={(e) => handleChange(e)} 
             />
             <br/>

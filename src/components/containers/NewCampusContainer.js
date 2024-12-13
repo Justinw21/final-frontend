@@ -42,7 +42,7 @@ class NewCampusContainer extends Component {
       name: this.state.name,
       address: this.state.address,
       description: this.state.description || null,
-      imageUrl: this.state.imageUrl || null || 'https://thumbs.worthpoint.com/zoom/images1/1/0617/17/ty-classic-scrapper-plush-puppy-dog_1_0a23f34a675a1e188e7573eda6c51f25.jpg',
+      imageUrl: this.state.imageUrl || null || 'https://i.ebayimg.com/images/g/F94AAOSw5lRnB~Aa/s-l1600.jpg',
     };
     
     // Add new campus in back-end database
