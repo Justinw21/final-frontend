@@ -56,7 +56,6 @@ AllCampusesContainer.propTypes = {
   allCampuses: PropTypes.array.isRequired,
   fetchAllCampuses: PropTypes.func.isRequired,
   deleteCampus: PropTypes.func.isRequired, // Add deleteCampus to PropTypes
-
 };
 
 // Export store-connected container by default
