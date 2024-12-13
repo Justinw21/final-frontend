@@ -21,7 +21,7 @@ class NewCampusContainer extends Component {
       name: "",
       address: "",
       description: "",
-      imageUrl: "", 
+      imageUrl: this.props.imageUrl, 
       redirect: false, 
       redirectId: null
     };
@@ -42,6 +42,7 @@ class NewCampusContainer extends Component {
       name: this.state.name,
       address: this.state.address,
       description: this.state.description || null,
+      //campusId: this.state.campusId,
       imageUrl: this.state.imageUrl || null || 'https://thumbs.worthpoint.com/zoom/images1/1/0617/17/ty-classic-scrapper-plush-puppy-dog_1_0a23f34a675a1e188e7573eda6c51f25.jpg',
     };
     
@@ -52,6 +53,7 @@ class NewCampusContainer extends Component {
     this.setState({
       name: "", 
       address: "",
+      //campusId: "",
       description: "",
       imageUrl: "", 
       redirect: true, 

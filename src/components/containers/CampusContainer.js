@@ -11,6 +11,7 @@ import { connect } from "react-redux";
 import { fetchCampusThunk } from "../../store/thunks";
 
 import { CampusView } from "../views";
+import { editStudent } from '../../store/actions/actionCreators';
 
 class CampusContainer extends Component {
   // Get the specific campus data from back-end database
